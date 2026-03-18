@@ -2,17 +2,22 @@ project:
   type: website
   output-dir: docs
 
+highlight-style: a11y
+
 execute:
   cache: true
   freeze: auto
 
 website:
+  back-to-top-navigation: true
   reader-mode: false
   page-navigation: true
-  title: "FPS"
+  title: "FPF AgroScience"
+  search:
+    show-item-context: true
+    type: overlay
   navbar:
-    border: true
-    search: true
+    border: false
     left:
       - href: index.qmd
         text: Home
@@ -20,15 +25,25 @@ website:
         text: Quem somos
       - href: contato.qmd
         text: Contato
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/raphaelfitopatologia
+      - icon: instagram
+        href: https://www.instagram.com/invites/contact/?i=xk2vhn0e4rad&utm_content=2owlczy
   page-footer:
-    border: true
     left: © <span id='copyright-year'></span>. All rights reserved.
+    center: 
+      - text: "About"
+        href: about.qmd
+    background: "#375A7F"
 format:
   html:
+    page-layout: full
     include-after-body: footer.html
     theme:
-      - cosmo
+      light: cosmo
+      dark: darkly
     css: styles.css
-    toc: true
+    toc: false
     reader-mode: true
 editor: visual

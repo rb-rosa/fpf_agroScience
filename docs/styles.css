@@ -1,12 +1,25 @@
-/* css styles */
+/* ===== Reset básico ===== */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* remove limites do Quarto */
+main.content,
+#quarto-content {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* ===== Layout responsivo ===== */
 .responsive-columns {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .column {
     flex: 1 0 100%;
-    padding: 5px;
 }
 
 @media (min-width: 500px) {
@@ -15,12 +28,52 @@
     }
 }
 
-@media (min-width: 991.98px) {
-    body.quarto-light #quarto-header {
-        border-bottom: 1px solid #dee2e6;
-    }
+/* ===== Navbar (sem borda/sombra) ===== */
+#quarto-header,
+.navbar,
+.headroom,
+.headroom--pinned,
+.headroom--unpinned {
+    border: none !important;
+    box-shadow: none !important;
+}
 
-    body.quarto-dark #quarto-header {
-        border-bottom: 1px solid #3b3f47;
-    }
+/* ===== Hero com imagem de fundo ===== */
+.hero {
+    position: relative;
+    /* ESSENCIAL pro overlay funcionar */
+
+    background-image: url("https://picsum.photos/1920/1080");
+    /* background-image: url("imagens/fundo.jpeg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+    /* ocupa tela inteira */
+
+    margin-left: calc(-50vw + 50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* overlay escuro */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* garante que o conteúdo fique acima do overlay */
+.hero * {
+    position: relative;
+    z-index: 1;
 }
