@@ -1,38 +1,24 @@
 [
   {
-    "objectID": "index.html#sobre",
-    "href": "index.html#sobre",
-    "title": "FPF AgroScience",
-    "section": "Sobre",
-    "text": "Sobre\nConteúdo do site aqui…"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "contato.html",
-    "href": "contato.html",
-    "title": "Entre em contato",
+    "objectID": "laboratório.html",
+    "href": "laboratório.html",
+    "title": "Serviços de laboratório",
     "section": "",
     "text": "Back to top"
   },
   {
-    "objectID": "index.html#quem-somos",
-    "href": "index.html#quem-somos",
-    "title": "FPF AgroScience",
-    "section": "Quem Somos",
-    "text": "Quem Somos\n\nA 3M Experimentação Agrícola é uma empresa tradicional, essencialmente fundada com raízes nos valores familiares e estruturada em seus principais pilares, que são: pontualidade, confiabilidade, qualidade, compromisso e inovação. Fundamentos que fazem parte da construção da nossa história, e que transparecem na evolução da nossa trajetória ao longo de mais de 20 anos de existência.\nA 3M está localizada em Ponta Grossa, no estado do Paraná, e atuando desde 2002 apresenta soluções voltadas ao agronegócio através de estudos que envolvem pesquisa e experimentação agrícola; sendo destaque a nível nacional e referência na área de pesquisas agronômicas que envolvem produtos agroquímicos, químicos, biológicos, fertilizantes, sementes, inoculantes, entre outros.\nCredenciada no Ministério da Agricultura, Pecuária e Abastecimento para condução de ensaios experimentais de eficiência e praticabilidade agronômica (IN 36/42); avaliação da viabilidade e eficiência agronômica e elaboração do relatório técnico científico para fins de registro de fertilizante, corretivo e biofertilizantes (IN 53); a 3M também possui Reconhecimento BPL concedido pelo INMETRO para realização de estudos de resíduos de agrotóxicos, seus componentes e afins.\nProcuramos oferecer serviços de alta qualidade, desenvolvidos de forma independente, atendendo às necessidades solicitadas com a garantia de confidencialidade , responsabilidade ética e eficiência."
+    "objectID": "contato.html",
+    "href": "contato.html",
+    "title": "Contato",
+    "section": "",
+    "text": "Back to top"
   },
   {
-    "objectID": "index.html#bem-vindo",
-    "href": "index.html#bem-vindo",
-    "title": "FPF AgroScience",
-    "section": "Bem-vindo",
-    "text": "Bem-vindo\n\nEste é o Quarto website para disponibilizar as aulas em RStudio sobre Análise e Visualização de Dados em Fitopatologia da disciplina FIP 606, oferecida no Programa de Pós-graduação em Fitopatologia da Universidade Federal de Viçosa pelo professor Emerson M Del Ponte. As aulas são códigos comentados e estão organizadas em “Fundamentos”, “Análise Exploratória” e “Análise de Dados”. O objetivo do website é compartilhar o conhecimento aprendido com outros colegas da área e despertar o interesse daqueles que ainda não conhecem o tema.\n\nEspero que aproveite!"
+    "objectID": "campo.html",
+    "href": "campo.html",
+    "title": "Serviços de campo",
+    "section": "",
+    "text": "About this site\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",

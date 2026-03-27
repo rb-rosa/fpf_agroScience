@@ -21,8 +21,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: Quem somos
+      - href: campo.qmd
+        text: Serviços de campo
+      - href: laboratório.qmd
+        text: Serviços de laboratório
       - href: contato.qmd
         text: Contato
     right:
@@ -30,6 +32,8 @@ website:
         href: https://www.linkedin.com/in/raphaelfitopatologia
       - icon: instagram
         href: https://www.instagram.com/invites/contact/?i=xk2vhn0e4rad&utm_content=2owlczy
+      - icon: whatsapp
+        href: https://wa.me/5564992915590
   page-footer:
     left: © <span id='copyright-year'></span>. All rights reserved.
     center: 
