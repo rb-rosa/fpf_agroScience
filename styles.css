@@ -183,6 +183,11 @@ main.content {
 
     padding: 30px;
     border-radius: 15px;
+
+    max-width: 500px;
+    /* 👈 ajuste aqui */
+    width: 40%;
+    /* opcional: controla proporcionalmente */
 }
 
 /* ===================================================== */
