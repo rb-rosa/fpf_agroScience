@@ -1,12 +1,62 @@
 ---
-title: "Contato"
-format: html
+format:
+  html:
+    css: styles.css
+    page-layout: full
 ---
 
-:::: {=html}
+:::::::::::: page-contato
+<!-- HERO -->
+
+:::: contato-hero
+::: hero-box
+### **Serviços de Pesquisa Agrícola da FPF AgroScience**
+
+Contamos com grandes Estações Experimentais credenciadas pelo MAPA, CTNBio (CQB) e Inmetro, equipadas com uma infraestrutura robusta e equipes técnicas altamente qualificadas.
+:::
+::::
+
+<!-- CARDS -->
+
+::::::: cards-section
+# Áreas de Atuação
+
+#### Estudos de campo, em casas de vegetação e laboratórios com rigor científico, segurança e agilidade, para atender às demandas da pesquisa dagrícola moderna.
+
+:::::: cards-container
+::: card
+<img src="https://picsum.photos/400/300?1"/>
+
+<h3>Fitopatologia</h3>
+
+<p>Estudos de doenças nas plantas e suas formas de controle, especialmente através de fungicidas, biológicos, químicos e outras práticas de manejo.</p>
+:::
+
+::: card
+<img src="https://picsum.photos/400/300?2"/>
+
+<h3>Nematologia</h3>
+
+<p>Identificação e manejo de nematoides, com foco em redução de impactos na produtividade agrícola.</p>
+:::
+
+::: card
+<img src="https://picsum.photos/400/300?3"/>
+
+<h3>Plantas Daninhas</h3>
+
+<p>Controle e manejo de plantas daninhas com estratégias eficientes e sustentáveis.</p>
+:::
+::::::
+:::::::
+
+<!-- MAPA + FORM -->
+
+:::: contato-wrapper
 ::: map-container
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.78317193943!2d-49.20628427576601!3d-17.812776483148774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a08d5501a3d3e5%3A0xeee1ca7ae8390648!2sIFGoiano%20-%20WORK!5e1!3m2!1sen!2sbr!4v1774591507328!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="500" style="border:0;" allowfullscreen loading="lazy">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.5423304717087!2d-49.08649162576717!3d-17.769555583184257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a0950033448713%3A0xac4be9b065015a23!2sCh%C3%A1cara%20Donguri!5e1!3m2!1sen!2sbr!4v1775529913659!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
 </iframe>
 :::
 ::::
+::::::::::::

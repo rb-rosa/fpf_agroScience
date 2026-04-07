@@ -36,9 +36,6 @@ website:
         href: https://wa.me/5564992915590
   page-footer:
     left: © <span id='copyright-year'></span>. All rights reserved.
-    center: 
-      - text: "About"
-        href: about.qmd
     background: "#375A7F"
 format:
   html:
