@@ -353,14 +353,65 @@ Controle e manejo de plantas daninhas com estratégias eficientes e sustentávei
 </div>
 </section>
 </section>
-<!-- MAPA + FORM -->
+</div>
 <div class="contato-wrapper">
-<div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.5423304717087!2d-49.08649162576717!3d-17.769555583184257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a0950033448713%3A0xac4be9b065015a23!2sCh%C3%A1cara%20Donguri!5e1!3m2!1sen!2sbr!4v1775529913659!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+<div class="form-box">
+##
+<h2 class="anchored">
+<strong>Precisa conversar sobre projetos de pesquisas ou tirar dúvidas sobre os nossos trabalhos?</strong>
+</h2>
+#
+<h1>
+Entre em contato agora mesmo!
+</h1>
+<form id="meu-form" action="https://docs.google.com/forms/d/e/1FAIpQLSe5xNTaf1qayDDNeCwWvIidERMZYrJZMjb94disHEmAdBCFbQ/formResponse" method="POST" target="hidden_iframe" onsubmit="enviarFormulario()">
+<p><label>Nome*</label> <input type="text" name="entry.1158341318" required=""></p>
+<p><label>Email*</label> <input type="email" name="entry.206076213" required=""></p>
+<p><label>Empresa*</label> <input type="text" name="entry.2005284483"></p>
+<p><label>Cargo*</label> <input type="text" name="entry.1457470981"></p>
+<p><label>Observação:</label> <input type="text" name="entry.1083505151"></p>
+<p><label>11 + 4 = ?</label> <input type="number" name="entry.445936508"></p>
+<button type="submit">
+<p>Vamos conversar</p>
+</button>
+</form>
+<!-- iframe invisível -->
+<iframe name="hidden_iframe" style="display:none;">
+</iframe>
+<!-- mensagem -->
+<div id="mensagem-sucesso">
+<p>✅ Mensagem enviada com sucesso!</p>
+</div>
+</div>
+<div class="mapa">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.5423304717087!2d-49.08649162576717!3d-17.769555583184257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a0950033448713%3A0xac4be9b065015a23!2sCh%C3%A1cara%20Donguri!5e1!3m2!1sen!2sbr!4v1775529913659!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy">
 </iframe>
 </div>
 </div>
-</div>
+<script>
+function enviarFormulario() {
+
+    // valida conta
+    let resposta = document.querySelector('input[name="entry.445936508"]').value;
+
+    if (resposta != "15") {
+        alert("Resposta incorreta!");
+        return false;
+    }
+
+    // mostra mensagem
+    setTimeout(function() {
+        document.getElementById("mensagem-sucesso").style.display = "block";
+    }, 500);
+
+    // limpa formulário
+    setTimeout(function() {
+        document.getElementById("meu-form").reset();
+    }, 600);
+
+    return true;
+}
+</script>
 
 
 

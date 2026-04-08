@@ -67,6 +67,44 @@ main.content {
 }
 
 /* ===================================================== */
+/* ===== QUEM SOMOS (VERSÃO CORRIGIDA) ===== */
+/* ===================================================== */
+
+.quem-somos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* mantém leve */
+}
+
+.quem-somos .qs-img {
+    margin-right: 50px;
+    /* 🔥 resolve de verdade */
+}
+
+/* imagem */
+.quem-somos .qs-img {
+    flex: 0 0 320px;
+    /* levemente ajustado */
+}
+
+.quem-somos .qs-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+/* texto */
+.quem-somos .qs-texto {
+    flex: 1;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* ===================================================== */
 /* ===== CARDS (GLOBAL) ===== */
 /* ===================================================== */
 .cards-section {
@@ -205,4 +243,134 @@ main.content {
         transform: translate(-50%, -50%);
         width: 90%;
     }
+}
+
+/* ===================================================== */
+/* ===== FORMULÁRIO (COMPACTO) ===== */
+/* ===================================================== */
+
+.form-box {
+    background: linear-gradient(135deg, #0f1f2e, #162c3f);
+    padding: 18px;
+    /* 🔥 menor */
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 🔥 evita altura esticada */
+
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+
+    border-radius: 15px;
+}
+
+/* títulos */
+.form-box h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.form-box h1 {
+    color: #7bed9f;
+    margin-bottom: 10px;
+    /* 🔥 menor */
+    font-size: 22px;
+}
+
+/* campos */
+.form-box label {
+    margin-top: 6px;
+    /* 🔥 menor */
+    font-size: 12px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 5px;
+    /* 🔥 menor */
+    margin-top: 2px;
+
+    border-radius: 5px;
+    border: none;
+
+    background: #dcdcdc;
+}
+
+/* textarea menor */
+.form-box textarea {
+    height: 70px;
+    /* 🔥 controla altura direto */
+}
+
+/* botão */
+.form-box button {
+    margin-top: 12px;
+    /* 🔥 menor */
+
+    background: #6fcf97;
+    color: #1f2c3a;
+
+    border: none;
+    padding: 10px;
+    /* 🔥 menor */
+
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* responsivo (mantido só o essencial) */
+@media (max-width: 768px) {
+    .contato-container {
+        height: auto;
+    }
+}
+
+/* container geral */
+.contato-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    /* 🔥 espaço entre mapa e formulário */
+}
+
+/* mapa largo */
+.mapa {
+    width: 95%;
+    /* 🔥 quase tela toda */
+    max-width: 1400px;
+    height: 300px;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* iframe ocupa tudo */
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* formulário já está ok, só garante centralização */
+.form-box {
+    max-width: 480px;
+    width: 100%;
+}
+
+#mensagem-sucesso {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 8px;
 }
