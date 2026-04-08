@@ -53,9 +53,9 @@ Contamos com grandes Estações Experimentais credenciadas pelo MAPA, CTNBio (CQ
 
 :::::: contato-wrapper
 :::: form-box
-## <h2>**Precisa conversar sobre projetos de pesquisas ou tirar dúvidas sobre os nossos trabalhos?**</h2>
+#### Precisa conversar sobre projetos de pesquisas ou tirar dúvidas sobre os nossos trabalhos?
 
-# <h1>Entre em contato agora mesmo!</h1>
+# **Entre em contato agora mesmo!**
 
 <form id="meu-form" action="https://docs.google.com/forms/d/e/1FAIpQLSe5xNTaf1qayDDNeCwWvIidERMZYrJZMjb94disHEmAdBCFbQ/formResponse" method="POST" target="hidden_iframe" onsubmit="enviarFormulario()">
 

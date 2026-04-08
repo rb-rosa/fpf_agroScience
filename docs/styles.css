@@ -22,13 +22,36 @@ main.content {
 /* ===================================================== */
 /* ===== NAVBAR ===== */
 /* ===================================================== */
-#quarto-header,
-.navbar,
-.headroom,
-.headroom--pinned,
-.headroom--unpinned {
+
+/* Remove qualquer espaço acima */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Header fixo sem espaçamento */
+#quarto-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Navbar limpa e compacta */
+.navbar {
     border: none !important;
     box-shadow: none !important;
+    margin: 0 !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Garante que o header inteiro fique fixo */
+#quarto-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* ===================================================== */

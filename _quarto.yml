@@ -17,6 +17,7 @@ website:
     show-item-context: true
     type: overlay
   navbar:
+    pinned: true
     border: false
     left:
       - href: index.qmd
