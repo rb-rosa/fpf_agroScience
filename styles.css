@@ -93,6 +93,29 @@ body {
 /* ===== QUEM SOMOS (VERSÃO CORRIGIDA) ===== */
 /* ===================================================== */
 
+@media (max-width: 768px) {
+    .quem-somos {
+        flex-direction: column;
+        /* 🔥 empilha imagem + texto */
+        text-align: center;
+        /* opcional, fica mais bonito */
+    }
+
+    .quem-somos .qs-img {
+        margin-right: 0;
+        /* 🔥 remove o espaço lateral */
+        margin-bottom: 20px;
+        /* espaço entre imagem e texto */
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .quem-somos .qs-texto {
+        text-align: center;
+        /* opcional */
+    }
+}
+
 .quem-somos {
     display: flex;
     align-items: center;
