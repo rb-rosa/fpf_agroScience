@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-:::::::::: page-contato
+::::: page-contato
 <!-- HERO -->
 
 :::: contato-hero
@@ -15,41 +15,7 @@ format:
 Contamos com grandes Estações Experimentais credenciadas pelo MAPA, CTNBio (CQB) e Inmetro, equipadas com uma infraestrutura robusta e equipes técnicas altamente qualificadas.
 :::
 ::::
-
-<!-- CARDS -->
-
-::::::: cards-section
-# Áreas de Atuação
-
-#### Estudos de campo, em casas de vegetação e laboratórios com rigor científico, segurança e agilidade, para atender às demandas da pesquisa dagrícola moderna.
-
-:::::: cards-container
-::: card
-<img src="https://picsum.photos/400/300?1"/>
-
-<h3>Fitopatologia</h3>
-
-<p>Estudos de doenças nas plantas e suas formas de controle, especialmente através de fungicidas, biológicos, químicos e outras práticas de manejo.</p>
-:::
-
-::: card
-<img src="https://picsum.photos/400/300?2"/>
-
-<h3>Nematologia</h3>
-
-<p>Identificação e manejo de nematoides, com foco em redução de impactos na produtividade agrícola.</p>
-:::
-
-::: card
-<img src="https://picsum.photos/400/300?3"/>
-
-<h3>Plantas Daninhas</h3>
-
-<p>Controle e manejo de plantas daninhas com estratégias eficientes e sustentáveis.</p>
-:::
-::::::
-:::::::
-::::::::::
+:::::
 
 :::::: contato-wrapper
 :::: form-box

@@ -57,7 +57,7 @@ body {
 /* ===================================================== */
 /* ===== HERO ===== */
 /* ===================================================== */
-.hero {
+/* .hero {
     position: relative;
     background-image: url("https://picsum.photos/1920/1080");
     background-size: cover;
@@ -87,51 +87,22 @@ body {
 .hero * {
     position: relative;
     z-index: 1;
-}
+} */
 
 /* ===================================================== */
-/* ===== QUEM SOMOS (VERSÃO CORRIGIDA) ===== */
+/* ===== QUEM SOMOS (CORRIGIDO E LIMPO) ===== */
 /* ===================================================== */
-
-@media (max-width: 768px) {
-    .quem-somos {
-        flex-direction: column;
-        /* 🔥 empilha imagem + texto */
-        text-align: center;
-        /* opcional, fica mais bonito */
-    }
-
-    .quem-somos .qs-img {
-        margin-right: 0;
-        /* 🔥 remove o espaço lateral */
-        margin-bottom: 20px;
-        /* espaço entre imagem e texto */
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .quem-somos .qs-texto {
-        text-align: center;
-        /* opcional */
-    }
-}
 
 .quem-somos {
     display: flex;
     align-items: center;
-    gap: 20px;
-    /* mantém leve */
-}
-
-.quem-somos .qs-img {
-    margin-right: 50px;
-    /* 🔥 resolve de verdade */
+    gap: 80px;
+    /* 🔥 espaço mais equilibrado */
 }
 
 /* imagem */
 .quem-somos .qs-img {
     flex: 0 0 320px;
-    /* levemente ajustado */
 }
 
 .quem-somos .qs-img img {
@@ -148,6 +119,27 @@ body {
     color: #555;
     line-height: 1.8;
     text-align: left;
+}
+
+/* ===================================================== */
+/* ===== RESPONSIVO ===== */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+    .quem-somos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quem-somos .qs-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .quem-somos .qs-texto {
+        text-align: center;
+    }
 }
 
 /* ===================================================== */
@@ -298,17 +290,17 @@ body {
 .form-box {
     background: linear-gradient(135deg, #0f1f2e, #162c3f);
     padding: 18px;
-    /* 🔥 menor */
     color: white;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* 🔥 evita altura esticada */
 
     max-width: 480px;
     width: 100%;
-    margin: 0 auto;
+
+    margin: 80px auto 0;
+    /* ✅ agora funciona */
 
     border-radius: 15px;
 }
@@ -419,4 +411,130 @@ body {
     background: #2ecc71;
     color: white;
     border-radius: 8px;
+}
+
+/* ===================================================== */
+/* ===== NAVBAR COM IMAGEM (NOVO) ===== */
+/* ===================================================== */
+
+/* navbar com imagem de fundo */
+.navbar {
+    background-image: url("https://picsum.photos/1920/400");
+    /* 🔥 troque pela sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100px;
+    /* 🔥 aumenta altura */
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente */
+}
+
+/* deixa o texto branco para contraste */
+.navbar a,
+.navbar-brand {
+    color: white !important;
+}
+
+/* overlay escuro igual hero (opcional, mas recomendado) */
+.navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* garante que conteúdo fique acima do overlay */
+.navbar * {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar * {
+    position: relative;
+    z-index: 1;
+}
+
+/* ======================================= */
+/* ===== CORRIGE ÍCONES DA NAVBAR ===== */
+/* ======================================= */
+
+/* força todos os ícones a ficarem brancos */
+.navbar i,
+.navbar svg {
+    color: white !important;
+    fill: white !important;
+    stroke: white !important;
+    opacity: 1 !important;
+}
+
+/* garante que botões e links não fiquem apagados */
+.navbar a,
+.navbar button {
+    opacity: 1 !important;
+}
+
+.quem-somos {
+    display: flex !important;
+    align-items: center;
+    gap: 80px !important;
+    /* força o espaço */
+}
+
+.quem-somos .qs-img {
+    margin-right: 0 !important;
+    /* evita conflito */
+}
+
+.quem-somos .qs-texto {
+    padding-left: 40px;
+    /* 🔥 garante afastamento */
+}
+
+/* ===================================================== */
+/* ===== ÁREA DE ATUAÇÃO CENTRALIZADA ===== */
+/* ===================================================== */
+
+.area-atuacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* centraliza horizontal */
+    margin-top: 40px;
+}
+
+.area-overlay {
+    max-width: 800px;
+    /* controla largura do texto */
+    text-align: center;
+    /* centraliza texto */
+}
+
+/* título */
+.area-overlay h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* parágrafo */
+.area-overlay p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===================================================== */
+/* ===== REMOVE FUNDO DO RODAPÉ (FORÇADO) ===== */
+/* ===================================================== */
+
+#quarto-footer,
+#quarto-footer .footer,
+#quarto-footer .nav-footer {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
