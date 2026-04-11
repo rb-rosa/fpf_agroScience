@@ -527,14 +527,47 @@ body {
     line-height: 1.6;
 }
 
-/* ===================================================== */
-/* ===== REMOVE FUNDO DO RODAPÉ (FORÇADO) ===== */
-/* ===================================================== */
+.navbar-nav .nav-link {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
 
-#quarto-footer,
-#quarto-footer .footer,
-#quarto-footer .nav-footer {
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #0e0f09;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0e0f09 !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
 }

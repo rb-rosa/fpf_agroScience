@@ -9,23 +9,30 @@ execute:
   freeze: auto
 
 website:
+  announcement: 
+    icon: info-circle
+    dismissable: false
+    content: "**Alert** - this is some information that you should pay attention to"
+    type: primary
+    position: below-navbar
   back-to-top-navigation: true
   reader-mode: false
   page-navigation: true
-  title: "FPF AgroScience"
+  title: "FPF<br>AgroScience"
   search:
     show-item-context: true
     type: overlay
   navbar:
+    # logo: imagens/logo.png
     pinned: true
     border: false
     left:
       - href: index.qmd
         text: Home
       - href: campo.qmd
-        text: Serviços de campo
+        text: Em branco
       - href: laboratório.qmd
-        text: Serviços de laboratório
+        text: Em branco
       - href: contato.qmd
         text: Contato
     right:
@@ -42,10 +49,10 @@ format:
   html:
     page-layout: full
     include-after-body: footer.html
-    theme:
-      light: cosmo
-      dark: darkly
+    # theme:
+    #   light: cosmo
+    #   dark: darkly
     css: styles.css
     toc: false
-    reader-mode: true
+    reader-mode: false
 editor: visual
