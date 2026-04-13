@@ -54,10 +54,7 @@ body {
     z-index: 1000;
 }
 
-/* ===================================================== */
-/* ===== HERO ===== */
-/* ===================================================== */
-/* .hero {
+.hero {
     position: relative;
     background-image: url("https://picsum.photos/1920/1080");
     background-size: cover;
@@ -65,29 +62,34 @@ body {
     background-repeat: no-repeat;
 
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     margin-left: calc(-50vw + 50%);
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;     /* centraliza vertical */
+    justify-content: flex-start; /* joga pra esquerda */
 
-    text-align: center;
+    text-align: left;        /* texto alinhado à esquerda */
     color: white;
     overflow: hidden;
+
+    padding-left: 10%;       /* espaçamento da esquerda */
 }
 
+/* overlay */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.hero * {
+/* conteúdo acima do overlay */
+.hero > * {
     position: relative;
     z-index: 1;
-} */
+    max-width: 600px;
+}
 
 /* ===================================================== */
 /* ===== QUEM SOMOS (CORRIGIDO E LIMPO) ===== */
@@ -522,14 +524,14 @@ body {
 
 /* parágrafo */
 .area-overlay p {
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
     line-height: 1.6;
 }
 
 .navbar-nav .nav-link {
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .navbar-brand {
@@ -547,7 +549,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link::after {
+/* .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -564,10 +566,5 @@ body {
 
 .navbar-nav .nav-link:hover::after {
     width: 100%;
-}
+} */
 
-.navbar-brand img {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
-}

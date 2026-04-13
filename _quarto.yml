@@ -18,7 +18,7 @@ website:
   back-to-top-navigation: true
   reader-mode: false
   page-navigation: true
-  title: "FPF<br>AgroScience"
+  title: "FPF AgroScience"
   search:
     show-item-context: true
     type: overlay
@@ -30,9 +30,9 @@ website:
       - href: index.qmd
         text: Home
       - href: campo.qmd
-        text: Em branco
+        text: Serviços de campo
       - href: laboratório.qmd
-        text: Em branco
+        text: Serviços de laboratório
       - href: contato.qmd
         text: Contato
     right:
