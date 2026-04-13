@@ -14,7 +14,7 @@ website:
     dismissable: false
     content: "**Alert** - this is some information that you should pay attention to"
     type: primary
-    position: below-navbar
+    position: above-navbar
   back-to-top-navigation: true
   reader-mode: false
   page-navigation: true
