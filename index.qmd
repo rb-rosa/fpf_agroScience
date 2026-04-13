@@ -3,15 +3,9 @@ title: ""
 page-layout: full
 ---
 
-<div class="hero">
-  <div class="hero-box">
-
-### 
-
-Apoiamos nossos clientes em todas as etapas da experimentação agrícola, conduzindo estudos em conformidade com as exigências do MAPA, com foco na qualidade dos dados, segurança e confiabilidade dos resultados.
-
-  </div>
-</div>
+::: hero
+Realizamos estudos de experimentação agrícola seguindo rigorosamente os protocolos e diretrizes do MAPA, assegurando integridade dos dados, rastreabilidade e excelência científica.
+:::
 
 ::::: {.container .quem-somos}
 ::: qs-img
